@@ -1,0 +1,3 @@
+import { Card, CardContent, Stack, Typography } from '@mui/material'
+import type { ReactNode } from 'react'
+export function KpiCard({ label, value, detail, icon, colour = 'primary.main' }: { label: string; value: string; detail: string; icon: ReactNode; colour?: string }) { return <Card><CardContent sx={{ p: '18px !important' }}><Stack direction="row" justifyContent="space-between" alignItems="flex-start"><Stack spacing={.5}><Typography variant="body2" color="text.secondary">{label}</Typography><Typography variant="h4">{value}</Typography><Typography variant="caption" color="text.secondary">{detail}</Typography></Stack><Stack sx={{ p: 1, borderRadius: 2, bgcolor: `${colour}16`, color: colour }}>{icon}</Stack></Stack></CardContent></Card> }

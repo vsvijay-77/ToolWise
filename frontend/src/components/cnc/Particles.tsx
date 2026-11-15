@@ -1,0 +1,4 @@
+import { useMemo, useRef } from 'react'
+import { useFrame } from '@react-three/fiber'
+import type { Group } from 'three'
+export function Particles({ running }: { running: boolean }) { const group = useRef<Group>(null); const particles = useMemo(() => Array.from({ length: 24 }, (_, index) => ({ x: ((index * 17) % 13) / 30 - .22, y: ((index * 23) % 9) / 30, z: ((index * 29) % 15) / 34 - .2 })), []); useFrame(({ clock }) => { if (group.current) group.current.rotation.y = running ? clock.elapsedTime * .7 : 0 }); return <group ref={group} position={[0, 1.12, 0]}>{particles.map((item, index) => <mesh key={index} position={[item.x, item.y, item.z]} scale={running ? .018 : .007}><sphereGeometry args={[1, 6, 6]}/><meshBasicMaterial color={index % 2 ? '#D6B56B' : '#B6D9E4'} transparent opacity={running ? .62 : .15}/></mesh>)}</group> }
