@@ -193,10 +193,11 @@ function FactoryBayUnit3D({
             py: 0.45,
             borderRadius: 999,
             whiteSpace: 'nowrap',
-            bgcolor: selected ? '#1565C0' : 'rgba(255,255,255,.95)',
-            color: selected ? '#FFFFFF' : '#0F172A',
-            border: selected ? '2px solid #0D47A1' : '1px solid rgba(255,255,255,0.12)',
-            boxShadow: selected ? '0 8px 22px rgba(21,101,192,.35)' : '0 4px 12px rgba(15,23,42,.12)',
+            bgcolor: selected ? '#1D4ED8' : 'rgba(20,24,29,0.92)',
+            backdropFilter: 'blur(8px)',
+            color: '#F8FAFC',
+            border: selected ? '1.5px solid #60A5FA' : '1px solid rgba(255,255,255,0.16)',
+            boxShadow: selected ? '0 8px 22px rgba(59,130,246,.35)' : '0 4px 12px rgba(0,0,0,.45)',
             transition: 'all .25s ease',
             '&:hover': { transform: 'translateY(-2px)' },
           }}
@@ -220,16 +221,18 @@ function FactoryBayUnit3D({
                 bgcolor: selected
                   ? 'rgba(255,255,255,.22)'
                   : designInfo.category === 'PLC'
-                    ? 'rgba(0,137,123,.12)'
-                    : 'rgba(21,101,192,.12)',
-                color: selected ? '#FFFFFF' : designInfo.category === 'PLC' ? '#00897B' : '#1565C0',
+                    ? 'rgba(20,184,166,.18)'
+                    : 'rgba(59,130,246,.2)',
+                color: selected ? '#FFFFFF' : designInfo.category === 'PLC' ? '#5EEAD4' : '#60A5FA',
               }}
             />
-            <Typography sx={{ fontSize: 11, fontWeight: 800, fontFamily: '"JetBrains Mono", monospace' }}>
+            <Typography sx={{ fontSize: 11, fontWeight: 800, fontFamily: '"JetBrains Mono", monospace', color: '#F8FAFC' }}>
               {machine.id}
             </Typography>
-            <Typography sx={{ fontSize: 10.5, fontWeight: 700, opacity: 0.9 }}>· {machine.name}</Typography>
-            <ExternalLink size={11} style={{ opacity: 0.8 }} />
+            <Typography sx={{ fontSize: 10.5, fontWeight: 700, color: selected ? '#E2E8F0' : '#CBD5E1' }}>
+              · {machine.name}
+            </Typography>
+            <ExternalLink size={11} color="#94A3B8" />
           </Box>
 
           {canDelete && (
@@ -510,14 +513,15 @@ export function FactoryFloor2D({
                   sx={{
                     pointerEvents: 'auto',
                     fontWeight: 800,
-                    bgcolor: selected ? 'primary.main' : 'rgba(255,255,255,.94)',
-                    color: selected ? '#FFFFFF' : 'text.primary',
-                    border: selected ? '1px solid #0D47A1' : '1px solid rgba(255,255,255,0.12)',
-                    boxShadow: '0 4px 12px rgba(15,23,42,.08)',
-                    '&:hover': { bgcolor: selected ? 'primary.dark' : '#F8FAFC' },
+                    bgcolor: selected ? '#1D4ED8' : 'rgba(20,24,29,0.9)',
+                    backdropFilter: 'blur(8px)',
+                    color: '#F8FAFC',
+                    border: selected ? '1px solid #60A5FA' : '1px solid rgba(255,255,255,0.16)',
+                    boxShadow: '0 4px 12px rgba(0,0,0,.35)',
+                    '&:hover': { bgcolor: selected ? '#1E40AF' : 'rgba(30,36,44,0.95)' },
                     '& .MuiChip-deleteIcon': {
-                      color: selected ? 'rgba(255,255,255,.8)' : '#D32F2F',
-                      '&:hover': { color: selected ? '#FFFFFF' : '#B71C1C' },
+                      color: selected ? 'rgba(255,255,255,.8)' : '#F87171',
+                      '&:hover': { color: selected ? '#FFFFFF' : '#EF4444' },
                     },
                     '&::before': {
                       content: '""',
