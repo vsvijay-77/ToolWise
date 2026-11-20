@@ -141,8 +141,8 @@ export function AiAssistantCard({
                 px: 1.75,
                 py: 1.1,
                 borderRadius: 2,
-                bgcolor: msg.role === 'user' ? '#1565C0' : '#FFFFFF',
-                color: msg.role === 'user' ? '#FFFFFF' : '#0F172A',
+                bgcolor: msg.role === 'user' ? '#1D4ED8' : 'rgba(255,255,255,0.06)',
+                color: '#F8FAFC',
                 border: msg.role === 'user' ? 'none' : '1px solid rgba(255,255,255,0.08)',
               }}
             >

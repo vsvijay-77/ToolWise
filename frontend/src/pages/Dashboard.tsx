@@ -44,9 +44,9 @@ const statusColor: Record<
   UnifiedToolStatus,
   { accent: string; chipBg: string; chipText: string }
 > = {
-  OK: { accent: '#16A34A', chipBg: '#F0FDF4', chipText: '#15803D' },
-  Monitor: { accent: '#D97706', chipBg: '#FFFBEB', chipText: '#B45309' },
-  Critical: { accent: '#DC2626', chipBg: '#FEF2F2', chipText: '#B91C1C' },
+  OK: { accent: '#22C55E', chipBg: 'rgba(34,197,94,0.14)', chipText: '#4ADE80' },
+  Monitor: { accent: '#F59E0B', chipBg: 'rgba(245,158,11,0.14)', chipText: '#FBBF24' },
+  Critical: { accent: '#EF4444', chipBg: 'rgba(239,68,68,0.14)', chipText: '#F87171' },
 }
 
 const severityRank: Record<UnifiedToolStatus, number> = {
@@ -579,7 +579,7 @@ export default function Dashboard() {
                 size="small"
                 sx={{
                   borderRadius: '8px',
-                  bgcolor: '#EFF6FF',
+                  bgcolor: 'rgba(59,130,246,0.14)',
                   color: '#1565C0',
                   fontSize: 12,
                   fontWeight: 700,

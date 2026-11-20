@@ -276,7 +276,7 @@ export default function Report() {
                       borderRadius: '12px',
                       border: '1px solid rgba(255,255,255,0.08)',
                       borderLeft: isRec ? '3px solid #1565C0' : '1px solid rgba(255,255,255,0.08)',
-                      bgcolor: isRec ? '#F8FAFC' : '#FFFFFF',
+                      bgcolor: isRec ? 'rgba(59,130,246,0.1)' : '#14181D',
                       height: '100%',
                     }}
                   >
@@ -290,7 +290,7 @@ export default function Report() {
                           size="small"
                           sx={{
                             borderRadius: '8px',
-                            bgcolor: '#EFF6FF',
+                            bgcolor: 'rgba(59,130,246,0.14)',
                             color: '#1565C0',
                             fontSize: 11,
                             fontWeight: 700,

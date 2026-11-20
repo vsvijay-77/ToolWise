@@ -98,7 +98,7 @@ export default function AiAssistance() {
               icon={<Database size={13} />}
               label="PRE-LOADED WITH SAMPLE AI DECISION DATA"
               sx={{
-                bgcolor: '#EFF6FF',
+                bgcolor: 'rgba(59,130,246,0.14)',
                 color: '#1565C0',
                 border: '1px solid #BFDBFE',
                 fontWeight: 800,
@@ -145,7 +145,7 @@ export default function AiAssistance() {
           sx={{
             px: 3,
             py: 2.25,
-            background: 'linear-gradient(135deg, #EFF6FF 0%, #FFFFFF 100%)',
+            background: 'linear-gradient(135deg, rgba(59,130,246,0.14) 0%, #14181D 100%)',
             borderBottom: '1px solid #BFDBFE',
           }}
         >
@@ -255,7 +255,7 @@ export default function AiAssistance() {
                           bgcolor: '#14181D',
                           borderColor: '#CBD5E1',
                           '&:hover': {
-                            bgcolor: '#EFF6FF',
+                            bgcolor: 'rgba(59,130,246,0.14)',
                             borderColor: '#1565C0',
                           },
                         }}
@@ -290,8 +290,8 @@ export default function AiAssistance() {
                       px: 2,
                       py: 1.35,
                       borderRadius: 2.5,
-                      bgcolor: m.role === 'user' ? '#1565C0' : '#FFFFFF',
-                      color: m.role === 'user' ? '#FFFFFF' : '#0F172A',
+                      bgcolor: m.role === 'user' ? '#1D4ED8' : 'rgba(255,255,255,0.06)',
+                      color: '#F8FAFC',
                       border: m.role === 'user' ? 'none' : '1px solid #BFDBFE',
                       boxShadow:
                         m.role === 'user'

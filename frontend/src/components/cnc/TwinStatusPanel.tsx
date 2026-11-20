@@ -78,7 +78,7 @@ export function TwinStatusPanel({ machine, tool, job, compact = false }: { machi
           spacing={1.25}
           sx={{
             ...glass,
-            bgcolor: 'rgba(255,255,255,.94)',
+            bgcolor: 'rgba(20,24,29,0.92)',
             borderLeft: `4px solid ${t.main}`,
             px: 2,
             py: 1.25,
@@ -161,7 +161,7 @@ export function TwinStatusPanel({ machine, tool, job, compact = false }: { machi
           </Box>
 
           {/* Break countdown */}
-          <Box sx={{ ...glass, px: 2, py: 1.6, minWidth: 0, background: `linear-gradient(135deg, rgba(255,255,255,.94), ${t.soft})` }}>
+          <Box sx={{ ...glass, px: 2, py: 1.6, minWidth: 0, background: `linear-gradient(135deg, rgba(20,24,29,0.94), ${t.soft})` }}>
             <Stack direction="row" spacing={0.75} alignItems="center">
               <Clock3 size={14} color={t.main} />
               <Typography sx={{ fontSize: 10, fontWeight: 800, letterSpacing: '.08em', color: 'text.secondary' }}>TOOL BREAK RISK IN</Typography>

@@ -4,11 +4,11 @@ import type { IsoGroup, Material } from '../../data'
 
 const isoBadgeColors: Record<IsoGroup, { bg: string; fg: string; border: string }> = {
   'ISO N': { bg: '#ECFDF5', fg: '#047857', border: '#A7F3D0' },
-  'ISO P': { bg: '#EFF6FF', fg: '#1D4ED8', border: '#BFDBFE' },
-  'ISO S': { bg: '#FFFBEB', fg: '#B45309', border: '#FDE68A' },
+  'ISO P': { bg: 'rgba(59,130,246,0.14)', fg: '#60A5FA', border: 'rgba(59,130,246,0.35)' },
+  'ISO S': { bg: 'rgba(245,158,11,0.14)', fg: '#FBBF24', border: 'rgba(245,158,11,0.35)' },
   'ISO M': { bg: '#FEFCE8', fg: '#A16207', border: '#FEF08A' },
-  'ISO K': { bg: '#FEF2F2', fg: '#B91C1C', border: '#FECACA' },
-  'ISO H': { bg: '#F1F5F9', fg: '#334155', border: '#CBD5E1' },
+  'ISO K': { bg: 'rgba(239,68,68,0.14)', fg: '#F87171', border: 'rgba(239,68,68,0.35)' },
+  'ISO H': { bg: 'rgba(255,255,255,0.08)', fg: '#CBD5E1', border: 'rgba(255,255,255,0.16)' },
 }
 
 export function MaterialCard({

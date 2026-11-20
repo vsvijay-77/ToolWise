@@ -88,7 +88,7 @@ export default function SignIn() {
                 <Chip
                   label="SAFE ZONE · 82/100"
                   size="small"
-                  sx={{ bgcolor: '#F0FDF4', color: '#16A34A', border: '1px solid #BBF7D0', fontWeight: 800, fontSize: 11 }}
+                  sx={{ bgcolor: 'rgba(34,197,94,0.14)', color: '#4ADE80', border: '1px solid rgba(34,197,94,0.35)', fontWeight: 800, fontSize: 11 }}
                 />
               </Stack>
 

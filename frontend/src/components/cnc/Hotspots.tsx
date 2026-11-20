@@ -20,7 +20,7 @@ function Label({ title, value, colour, anchor }: Omit<Spot, 'position'>) {
         py: 0.5,
         borderRadius: 999,
         whiteSpace: 'nowrap',
-        bgcolor: 'rgba(255,255,255,.94)',
+        bgcolor: 'rgba(20,24,29,0.92)',
         backdropFilter: 'blur(8px)',
         border: '1px solid #E2E8F0',
         boxShadow: '0 4px 16px rgba(15,23,42,.12)',
@@ -31,7 +31,7 @@ function Label({ title, value, colour, anchor }: Omit<Spot, 'position'>) {
     >
       <Box sx={{ width: 7, height: 7, borderRadius: '50%', bgcolor: colour, boxShadow: `0 0 0 3px ${colour}26` }} />
       <Typography sx={{ fontSize: 9.5, fontWeight: 800, color: '#64748B', letterSpacing: '.06em' }}>{title}</Typography>
-      <Typography sx={{ fontSize: 11, fontWeight: 800, color: '#0F172A', fontFamily: '"JetBrains Mono", monospace' }}>{value}</Typography>
+      <Typography sx={{ fontSize: 11, fontWeight: 800, color: '#F8FAFC', fontFamily: '"JetBrains Mono", monospace' }}>{value}</Typography>
     </Box>
   )
 }

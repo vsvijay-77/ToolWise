@@ -122,7 +122,7 @@ function Tool2DBlueprint({ tool, wearPct, vbWear }: { tool: Tool; wearPct: numbe
         </text>
 
         <line x1="287" y1="142" x2="265" y2="184" stroke={tipColor} strokeWidth="1.5" />
-        <rect x="175" y="184" width="160" height="26" rx="6" fill="#FFFFFF" stroke={tipColor} strokeWidth="1.5" />
+        <rect x="175" y="184" width="160" height="26" rx="6" fill="#14181D" stroke={tipColor} strokeWidth="1.5" />
         <text x="255" y="201" textAnchor="middle" fill={tipColor} fontSize="11" fontWeight="800" fontFamily="JetBrains Mono, monospace">
           VB Wear: {vbWear.toFixed(2)} / {tool.vb_limit_mm.toFixed(2)} mm
         </text>
@@ -362,7 +362,7 @@ export function ToolMagazineTwinPanel({
                       p: 1.75,
                       borderRadius: 2.5,
                       border: isSelected ? '2px solid #1565C0' : '1px solid rgba(255,255,255,0.08)',
-                      bgcolor: isSelected ? '#F4F9FF' : '#FFFFFF',
+                      bgcolor: isSelected ? 'rgba(59,130,246,0.14)' : 'rgba(255,255,255,0.03)',
                       transition: 'all .18s ease',
                       '&:hover': { borderColor: 'primary.main' },
                     }}
@@ -399,7 +399,7 @@ export function ToolMagazineTwinPanel({
                       )}
                     </Stack>
 
-                    <Stack direction="row" justifyContent="space-between" mt={1.25} pt={1} borderTop="1px solid #F1F5F9">
+                    <Stack direction="row" justifyContent="space-between" mt={1.25} pt={1} borderTop="1px solid rgba(255,255,255,0.08)">
                       <Typography sx={{ fontSize: 12, color: 'text.secondary' }}>
                         Holder: <b>{tool.holder}</b>
                       </Typography>

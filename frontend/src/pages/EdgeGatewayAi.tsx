@@ -243,7 +243,7 @@ export default function EdgeGatewayAi() {
               icon={<Database size={13} />}
               label="PRE-LOADED WITH SAMPLE CNC EDGE TELEMETRY"
               sx={{
-                bgcolor: '#EFF6FF',
+                bgcolor: 'rgba(59,130,246,0.14)',
                 color: '#1565C0',
                 border: '1px solid #BFDBFE',
                 fontWeight: 800,
@@ -315,7 +315,7 @@ export default function EdgeGatewayAi() {
             <Chip
               size="small"
               label="Avg Latency: 5.2 ms"
-              sx={{ bgcolor: '#F0FDF4', color: '#15803D', border: '1px solid #BBF7D0', fontWeight: 800 }}
+              sx={{ bgcolor: 'rgba(34,197,94,0.14)', color: '#4ADE80', border: '1px solid rgba(34,197,94,0.35)', fontWeight: 800 }}
             />
           </Stack>
 
@@ -469,8 +469,8 @@ export default function EdgeGatewayAi() {
                       borderRadius: 2,
                       fontSize: 12,
                       fontWeight: 800,
-                      bgcolor: active ? '#1565C0' : '#F8FAFC',
-                      color: active ? '#FFFFFF' : '#334155',
+                      bgcolor: active ? '#1D4ED8' : 'rgba(255,255,255,0.04)',
+                      color: active ? '#FFFFFF' : '#CBD5E1',
                       border: '1px solid',
                       borderColor: active ? '#1565C0' : '#CBD5E1',
                     }}

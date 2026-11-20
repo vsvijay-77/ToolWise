@@ -66,21 +66,21 @@ const highlights = [
     title: 'Every Tool Change (₹ Cost Comparison)',
     text: 'Compare a planned ₹9,130 between-cycle tool replacement against a ₹78,400 mid-cut breakage event before starting the next batch.',
     color: '#1565C0',
-    bg: '#EFF6FF',
+    bg: 'rgba(59,130,246,0.14)',
   },
   {
     icon: Clock,
     title: 'Every Minute (Delay Prevention)',
     text: 'Track actual vs. predicted cutting minutes in real time—replacing 96+ minutes of unplanned spindle downtime with a 3-minute planned swap.',
     color: '#00897B',
-    bg: '#F0FDFA',
+    bg: 'rgba(20,184,166,0.14)',
   },
   {
     icon: ShieldCheck,
     title: 'Every Rupee & Part Protected',
     text: 'Prevent scrapped billets, dimensional drift, and ₹53,950 tool-holder collisions with explainable 0–100 health scores and automatic lockout alerts.',
     color: '#16A34A',
-    bg: '#F0FDF4',
+    bg: 'rgba(34,197,94,0.14)',
   },
 ]
 
@@ -392,7 +392,7 @@ export default function Home() {
                 size="small"
                 sx={{
                   mb: 1.25,
-                  bgcolor: '#EFF6FF',
+                  bgcolor: 'rgba(59,130,246,0.14)',
                   color: '#1565C0',
                   fontWeight: 800,
                   fontSize: 11,
@@ -425,7 +425,7 @@ export default function Home() {
                 title: 'Capture Spindle & Alloy Telemetry',
                 icon: Cpu,
                 accent: '#1565C0',
-                bg: '#EFF6FF',
+                bg: 'rgba(59,130,246,0.14)',
                 metric: 'RPM · Feed · Torque · ISO Alloy',
                 text: 'Streams live spindle load, RPM, feed rate, and active workpiece alloy (Al 6061, AISI 4140, Ti-6Al-4V, Inconel 718) from each bay.',
               },
@@ -443,7 +443,7 @@ export default function Home() {
                 title: 'Compare Replacement vs. Failure Loss',
                 icon: CircleDollarSign,
                 accent: '#D97706',
-                bg: '#FFFBEB',
+                bg: 'rgba(245,158,11,0.14)',
                 metric: 'Planned Swap (₹) vs. Breakdown (₹)',
                 text: 'Weighs a planned between-cycle tool replacement (₹9,130 · 3 min) against mid-cut breakage, 96 min delay, and ₹78,400 loss.',
               },
@@ -452,7 +452,7 @@ export default function Home() {
                 title: 'Dispatch Smarter Shop-Floor Action',
                 icon: ShieldCheck,
                 accent: '#16A34A',
-                bg: '#F0FDF4',
+                bg: 'rgba(34,197,94,0.14)',
                 metric: '0–100 Health · Batch Queue Sync',
                 text: 'Alerts operators to swap worn tools between cycles and verifies if remaining tool life covers the next queued workpiece batch.',
               },
@@ -548,7 +548,7 @@ export default function Home() {
                 size="small"
                 sx={{
                   mb: 1.25,
-                  bgcolor: '#EFF6FF',
+                  bgcolor: 'rgba(59,130,246,0.14)',
                   color: '#1565C0',
                   fontWeight: 800,
                   fontSize: 11,
@@ -589,7 +589,7 @@ export default function Home() {
                 title: 'Cutting Speed & Feed Life Tuning',
                 icon: Sliders,
                 accent: '#1565C0',
-                bg: '#EFF6FF',
+                bg: 'rgba(59,130,246,0.14)',
                 steps: [
                   'Benchmark live surface speed (Vc) against the alloy’s optimal window',
                   'Eliminate torque spikes during roughing that accelerate flank wear',
@@ -615,7 +615,7 @@ export default function Home() {
                 title: 'Planned Swap vs. Breakdown ROI Scheduling',
                 icon: Wrench,
                 accent: '#16A34A',
-                bg: '#F0FDF4',
+                bg: 'rgba(34,197,94,0.14)',
                 steps: [
                   'Compare planned replacement cost (₹) vs. emergency failure loss (₹)',
                   'Schedule 3-minute tool changes between part cycles instead of mid-cut',
@@ -715,7 +715,7 @@ export default function Home() {
                 size="small"
                 sx={{
                   mb: 1.25,
-                  bgcolor: '#F0FDF4',
+                  bgcolor: 'rgba(34,197,94,0.14)',
                   color: '#15803D',
                   fontWeight: 800,
                   fontSize: 11,
@@ -748,7 +748,7 @@ export default function Home() {
                 title: 'Zero Damaged Parts · Nominal Finish',
                 icon: ShieldCheck,
                 accent: '#16A34A',
-                bg: '#F0FDF4',
+                bg: 'rgba(34,197,94,0.14)',
                 border: '#BBF7D0',
                 threshold: 'Flank Wear VB < 0.20 mm · Score 80–100',
                 risk: '0 pcs at risk · ₹0 scrap exposure — Surface finish (Ra) and part tolerances remain strictly within spec.',
@@ -759,7 +759,7 @@ export default function Home() {
                 title: 'Pre-Damage Staging & Delay Buffer',
                 icon: AlertTriangle,
                 accent: '#D97706',
-                bg: '#FFFBEB',
+                bg: 'rgba(245,158,11,0.14)',
                 border: '#FDE68A',
                 threshold: 'Flank Wear VB 0.20–0.28 mm · Score 50–79',
                 risk: '1–2 pcs at rework risk (₹7,700–₹15,400) — Rising cutting forces can trigger exit burrs or minor chatter.',
@@ -770,7 +770,7 @@ export default function Home() {
                 title: 'Breakage, Scrap & Holder Protection',
                 icon: ShieldAlert,
                 accent: '#DC2626',
-                bg: '#FEF2F2',
+                bg: 'rgba(239,68,68,0.14)',
                 border: '#FECACA',
                 threshold: 'Flank Wear VB ≥ 0.30 mm or RUL = 0 min · Score < 50',
                 risk: '3+ pcs scrap + 96 min delay + ₹53,950 holder collision risk (₹78,400+ total potential loss).',

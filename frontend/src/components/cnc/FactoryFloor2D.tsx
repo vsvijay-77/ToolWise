@@ -650,7 +650,7 @@ export function FactoryFloor2D({
                           p: 1.5,
                           borderRadius: 2.5,
                           border: active ? '2px solid #1565C0' : '1px solid rgba(255,255,255,0.08)',
-                          bgcolor: active ? '#F0F7FF' : '#FFFFFF',
+                          bgcolor: active ? 'rgba(59,130,246,0.14)' : 'rgba(255,255,255,0.03)',
                         }}
                       >
                         <Typography sx={{ fontSize: 12.5, fontWeight: 800, color: active ? 'primary.main' : 'text.primary' }}>
