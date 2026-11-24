@@ -114,14 +114,14 @@ export function TopBar({ onMenu }: { onMenu: () => void }) {
           <Brand to="/dashboard" />
         </Box>
 
-        <Box sx={{ flex: 1, maxWidth: 440, ml: { lg: 4 }, position: 'relative' }}>
+        <Box sx={{ flex: 1, minWidth: 0, maxWidth: 440, ml: { lg: 4 }, position: 'relative' }}>
           <TextField
             size="small"
             fullWidth
             inputRef={searchInputRef}
             value={search}
             onChange={event => setSearch(event.target.value)}
-            placeholder="Search machines, tools, or materials... (Press /)"
+            placeholder="Search machines, tools, materials..."
             inputProps={{ 'aria-label': 'Global search' }}
             InputProps={{
               startAdornment: (
@@ -130,14 +130,14 @@ export function TopBar({ onMenu }: { onMenu: () => void }) {
                 </InputAdornment>
               ),
               endAdornment: (
-                <InputAdornment position="end">
+                <InputAdornment position="end" sx={{ display: { xs: 'none', sm: 'flex' } }}>
                   <Box
                     sx={{
                       px: 0.7,
                       py: 0.15,
                       borderRadius: 1,
                       bgcolor: 'rgba(255,255,255,0.08)',
-                      color: '#475569',
+                      color: '#94A3B8',
                       fontSize: 11,
                       fontWeight: 700,
                       fontFamily: '"JetBrains Mono", monospace',
@@ -264,7 +264,7 @@ export function TopBar({ onMenu }: { onMenu: () => void }) {
         onClose={() => setAlertAnchor(null)}
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
         transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-        PaperProps={{ sx: { width: 360, mt: 1, borderRadius: 2.5, overflow: 'hidden' } }}
+        PaperProps={{ sx: { width: { xs: 'calc(100vw - 24px)', sm: 360 }, maxWidth: 360, mt: 1, borderRadius: 2.5, overflow: 'hidden' } }}
       >
         <Box sx={{ px: 2, py: 1.5, borderBottom: '1px solid rgba(255,255,255,0.08)', bgcolor: 'rgba(255,255,255,0.04)' }}>
           <Stack direction="row" justifyContent="space-between" alignItems="center">

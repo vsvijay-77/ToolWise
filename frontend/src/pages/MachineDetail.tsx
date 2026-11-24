@@ -174,8 +174,8 @@ export default function MachineDetail() {
         alignItems={{ xs: 'flex-start', sm: 'center' }}
         spacing={2}
       >
-        <Stack direction="row" spacing={1.5} alignItems="center" flexWrap="wrap" useFlexGap>
-          <FormControl size="small" sx={{ minWidth: 230 }}>
+        <Stack direction="row" spacing={1.5} alignItems="center" flexWrap="wrap" useFlexGap sx={{ width: { xs: '100%', sm: 'auto' } }}>
+          <FormControl size="small" sx={{ minWidth: { xs: 0, sm: 230 }, width: { xs: '100%', sm: 'auto' } }}>
             <InputLabel>Machine</InputLabel>
             <Select
               label="Machine"

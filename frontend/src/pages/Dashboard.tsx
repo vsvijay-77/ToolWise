@@ -270,7 +270,8 @@ export default function Dashboard() {
           <Grid key={kpi.label} size={{ xs: 12, sm: 6, lg: 3 }}>
             <Card
               sx={{
-                height: 96,
+                minHeight: 96,
+                height: { xs: 'auto', sm: 96 },
                 borderRadius: '12px',
                 border: '1px solid rgba(255,255,255,0.08)',
                 boxShadow: 'none',
@@ -290,10 +291,10 @@ export default function Dashboard() {
                 <Typography sx={{ fontSize: 12, color: '#64748B', fontWeight: 600 }}>
                   {kpi.label}
                 </Typography>
-                <Stack direction="row" justifyContent="space-between" alignItems="baseline" sx={{ mt: 0.5 }}>
+                <Stack direction="row" justifyContent="space-between" alignItems="baseline" flexWrap="wrap" useFlexGap spacing={1} sx={{ mt: 0.5 }}>
                   <Typography
                     sx={{
-                      fontSize: 22,
+                      fontSize: { xs: 20, sm: 22 },
                       fontWeight: 700,
                       fontFamily: '"JetBrains Mono", monospace',
                       color: '#F8FAFC',
@@ -356,7 +357,7 @@ export default function Dashboard() {
             elevation={0}
             sx={{ borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', bgcolor: '#14181D' }}
           >
-            <Table size="medium">
+            <Table size="medium" sx={{ minWidth: 620 }}>
               <TableHead>
                 <TableRow sx={{ bgcolor: 'rgba(255,255,255,0.03)' }}>
                   <TableCell sx={{ fontWeight: 700, fontSize: 12, color: '#94A3B8' }}>Machine</TableCell>
@@ -531,7 +532,13 @@ export default function Dashboard() {
 
           <Box sx={{ height: 280, width: '100%' }}>
             <BarChart
-              xAxis={[{ scaleType: 'band', data: chartData.labels }]}
+              xAxis={[
+                {
+                  scaleType: 'band',
+                  data: chartData.labels,
+                  tickLabelStyle: { fontSize: 10.5 },
+                },
+              ]}
               yAxis={[{ label: 'Minutes (min)', min: 0 }]}
               grid={{ horizontal: true }}
               borderRadius={4}
@@ -554,7 +561,7 @@ export default function Dashboard() {
                 },
               ]}
               height={280}
-              margin={{ top: 16, right: 24, bottom: 36, left: 56 }}
+              margin={{ top: 16, right: 16, bottom: 40, left: 50 }}
             />
           </Box>
         </CardContent>

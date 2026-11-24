@@ -544,7 +544,7 @@ export default function Materials() {
                   value={targetMachineId}
                   onChange={e => setTargetMachineId(e.target.value)}
                   size="small"
-                  sx={{ minWidth: 220 }}
+                  sx={{ minWidth: { xs: 0, sm: 220 }, width: { xs: '100%', sm: 'auto' } }}
                 >
                   {fleetMachines.map(m => (
                     <MenuItem key={m.id} value={m.id}>

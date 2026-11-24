@@ -492,7 +492,8 @@ export function ToolLifeDecisionCard({
               <Box
                 key={tile.label}
                 sx={{
-                  height: 96,
+                  minHeight: 96,
+                  height: 'auto',
                   px: 2.5,
                   py: 2,
                   borderRadius: '10px',
@@ -505,12 +506,12 @@ export function ToolLifeDecisionCard({
                 <Typography sx={{ fontSize: 12, color: '#94A3B8' }}>{tile.label}</Typography>
                 <Typography
                   sx={{
-                    fontSize: 20,
+                    fontSize: { xs: 18, sm: 20 },
                     fontWeight: 700,
                     fontFamily: '"JetBrains Mono", monospace',
                     fontVariantNumeric: 'tabular-nums',
                     color: '#F8FAFC',
-                    whiteSpace: 'nowrap',
+                    whiteSpace: { xs: 'normal', sm: 'nowrap' },
                   }}
                 >
                   {tile.value}

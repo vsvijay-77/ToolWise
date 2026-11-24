@@ -49,15 +49,66 @@ export const theme = createTheme({
           colorScheme: 'dark only',
           backgroundColor: '#0B0E14',
           color: '#F8FAFC',
+          maxWidth: '100%',
+          overflowX: 'hidden',
         },
         body: {
           minWidth: 320,
+          maxWidth: '100%',
+          overflowX: 'hidden',
           backgroundColor: '#0B0E14',
           color: '#F8FAFC',
           WebkitFontSmoothing: 'antialiased',
           MozOsxFontSmoothing: 'grayscale',
         },
+        '#root': {
+          maxWidth: '100%',
+          overflowX: 'hidden',
+        },
+        '.MuiTableContainer-root': {
+          maxWidth: '100%',
+          overflowX: 'auto',
+          WebkitOverflowScrolling: 'touch',
+        },
         '*': { boxSizing: 'border-box' },
+        '@media (max-width: 900px)': {
+          '.MuiContainer-root': {
+            paddingLeft: '16px !important',
+            paddingRight: '16px !important',
+          },
+        },
+        '@media (max-width: 600px)': {
+          '.MuiCardContent-root': {
+            padding: '16px !important',
+          },
+          '.MuiCardContent-root:last-child': {
+            paddingBottom: '16px !important',
+          },
+          '.MuiToolbar-root': {
+            gap: '8px !important',
+            paddingLeft: '12px !important',
+            paddingRight: '12px !important',
+          },
+          '.MuiTypography-h1': {
+            fontSize: '1.85rem !important',
+            lineHeight: 1.15,
+          },
+          '.MuiTypography-h2': {
+            fontSize: '1.65rem !important',
+            lineHeight: 1.18,
+          },
+          '.MuiTypography-h3': {
+            fontSize: '1.4rem !important',
+            lineHeight: 1.22,
+          },
+          '.MuiTypography-h4': {
+            fontSize: '1.25rem !important',
+            lineHeight: 1.25,
+          },
+          '.MuiTypography-root': {
+            overflowWrap: 'break-word',
+          },
+        },
       },
     },
     MuiAppBar: {

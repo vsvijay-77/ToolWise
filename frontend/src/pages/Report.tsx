@@ -226,14 +226,14 @@ export default function Report() {
               </Typography>
             </Box>
 
-            <Stack direction="row" spacing={1.5} flexWrap="wrap" useFlexGap>
+            <Stack direction="row" spacing={1.5} flexWrap="wrap" useFlexGap sx={{ width: { xs: '100%', md: 'auto' } }}>
               <TextField
                 size="small"
                 label={rateLabel}
                 type="number"
                 value={hourlyRate}
                 onChange={(e) => setHourlyRate(Number(e.target.value))}
-                sx={{ width: 140 }}
+                sx={{ width: { xs: '100%', sm: 140 } }}
               />
               <TextField
                 size="small"
@@ -241,7 +241,7 @@ export default function Report() {
                 type="number"
                 value={partCost}
                 onChange={(e) => setPartCost(Number(e.target.value))}
-                sx={{ width: 120 }}
+                sx={{ width: { xs: 'calc(50% - 6px)', sm: 120 } }}
               />
               <TextField
                 select
@@ -249,7 +249,7 @@ export default function Report() {
                 label="Currency"
                 value={currency}
                 onChange={(e) => setCurrency(e.target.value as 'USD' | 'INR')}
-                sx={{ width: 96 }}
+                sx={{ width: { xs: 'calc(50% - 6px)', sm: 96 } }}
               >
                 <MenuItem value="INR">INR</MenuItem>
                 <MenuItem value="USD">USD</MenuItem>
